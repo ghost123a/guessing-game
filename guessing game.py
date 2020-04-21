@@ -1,5 +1,9 @@
 import random
 
+print('Welcome to HNG Guessing Game')
+print('____________________________')
+print('')
+
 def easy_level():
     secret_num = random.randint(1,10)
     no_of_guess = 0
@@ -7,7 +11,7 @@ def easy_level():
 
     while no_of_guess < guess_limit:
         try:
-            guess = int(input('Guess the secret number: '))
+            guess = int(input('Guess the secret number from 1 to 10: '))
             no_of_guess += 1
             if guess == secret_num:
                 print('You got it right!')
@@ -29,7 +33,7 @@ def middle_level():
 
     while no_of_guess < guess_limit:
         try:
-            guess = int(input('Guess the secret number: '))
+            guess = int(input('Guess the secret number from 1 to 20: '))
             no_of_guess += 1
             if guess == secret_num:
                 print('You got it right!')
@@ -51,7 +55,7 @@ def hard_level():
 
     while no_of_guess < guess_limit:
         try:
-            guess = int(input('Guess the secret number: '))
+            guess = int(input('Guess the secret number from 1 to 50: '))
             no_of_guess += 1
             if guess == secret_num:
                 print('You got it right!')
